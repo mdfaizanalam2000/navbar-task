@@ -1,11 +1,14 @@
-const displayMenu = () => {
-    document.getElementById("bottom").style.display = "block"
-    document.getElementById("hamburger-expand").style.display = "none"
-    document.getElementById("hamburger-close").style.display = "block"
-}
-
-const closeMenu = () => {
-    document.getElementById("bottom").style.display = "none"
-    document.getElementById("hamburger-expand").style.display = "block"
-    document.getElementById("hamburger-close").style.display = "none"
+const toggleMenu = () => {
+    let navElem = document.getElementById("bottom")
+    let toggleElem = document.getElementById("hamburger-expand")
+    if (navElem.style.display === "") {
+        navElem.style.display = "block"
+        toggleElem.classList.remove("fa-bars")
+        toggleElem.classList.add("fa-xmark")
+    }
+    else {
+        navElem.style.display = ""
+        toggleElem.classList.remove("fa-xmark")
+        toggleElem.classList.add("fa-bars")
+    }
 }
