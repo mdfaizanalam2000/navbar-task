@@ -12,3 +12,13 @@ const toggleMenu = () => {
         toggleElem.classList.add("fa-bars")
     }
 }
+
+const toggleProfile = () => {
+    let elem = document.querySelector(".menu")
+    if (elem.style.display === "") {
+        elem.style.display = "block"
+    }
+    else {
+        elem.style.display = ""
+    }
+}

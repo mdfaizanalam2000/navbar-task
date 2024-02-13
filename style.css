@@ -63,6 +63,30 @@ body {
     font-size: smaller;
 }
 
+.user-name {
+    cursor: pointer;
+}
+
+.menu {
+    background-color: rgb(165, 165, 201);
+    position: absolute;
+    right: 0;
+    top: 2.8rem;
+    width: 8rem;
+    height: auto;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    display: none;
+    text-align: center;
+    padding: 5px;
+}
+
+.menu p {
+    margin: 5px 0;
+    cursor: pointer;
+}
+
 @media only screen and (max-width:600px) {
     #hamburger-expand {
         display: block;
